@@ -18,7 +18,7 @@ export default function ForgotPassword() {
     return "";
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e?: React.FormEvent) => {
     e?.preventDefault();
 
     const emailError = validateEmail(email);

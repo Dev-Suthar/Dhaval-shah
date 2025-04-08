@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 
 interface ButtonProps {
   title: string;
-  onPress: () => void;
+  onPress: (e?: React.FormEvent) => void;
   disabled?: any;
   btnStyle?: string; // Additional Tailwind classes for button
   textStyle?: string; // Additional Tailwind classes for text

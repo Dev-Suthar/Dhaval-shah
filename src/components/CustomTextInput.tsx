@@ -1,6 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
-
 const CustomEmailInput = ({
   label,
   value,
@@ -11,7 +8,7 @@ const CustomEmailInput = ({
   type = "text",
   isValid = true,
   showValidation = true,
-  icon = null,
+  icon,
   onIconClick = () => {},
   disabled = false,
   secureTextEntry = false,
@@ -88,26 +85,6 @@ const CustomEmailInput = ({
       )}
     </div>
   );
-};
-
-// Mandatory Props
-CustomEmailInput.propTypes = {
-  label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  placeholder: PropTypes.string.isRequired,
-  errorMessage: PropTypes.string.isRequired,
-  showIcon: PropTypes.bool.isRequired,
-  isMandatory: PropTypes.bool.isRequired,
-
-  // Optional Props
-  type: PropTypes.string,
-  isValid: PropTypes.bool,
-  showValidation: PropTypes.bool,
-  icon: PropTypes.element,
-  onIconClick: PropTypes.func,
-  disabled: PropTypes.bool,
-  secureTextEntry: PropTypes.bool,
 };
 
 export default CustomEmailInput;

@@ -130,12 +130,6 @@ export default function Login() {
               setPassword(val);
               setErrors((prev) => ({ ...prev, password: "" }));
             }}
-            onBlur={() =>
-              setErrors((prev) => ({
-                ...prev,
-                password: validatePassword(password),
-              }))
-            }
             errorMessage={errors.password}
             icon={
               showPassword ? (
@@ -167,6 +161,24 @@ export default function Login() {
             disabled={!email || !password || errors.email || errors.password}
             btnStyle="mt-[20px]"
           />
+          <div
+            className="flex items-center justify-center text-sm"
+            style={{
+              paddingTop: "20px",
+              textAlign: "center",
+            }}
+          >
+            <Link
+              to="/registration"
+              className="text-[#414141] text-[12px] leading-[16px] font-normal hover:text-[#951B81]"
+              style={{
+                fontFamily: "WorkSans-Regular",
+                alignSelf: "center",
+              }}
+            >
+              Create an account
+            </Link>
+          </div>
         </form>
       </div>
     </div>

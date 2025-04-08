@@ -108,6 +108,7 @@ export default function Registration() {
             showIcon={false}
             placeholder="Enter first name"
             isMandatory={true}
+            icon={undefined}
           />
 
           <CustomTextInput
@@ -118,6 +119,7 @@ export default function Registration() {
             showIcon={false}
             placeholder="Enter last name"
             isMandatory={true}
+            icon={undefined}
           />
 
           <CustomTextInput
