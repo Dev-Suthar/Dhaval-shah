@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  body {
+    
+  }
+}
+@font-face {
+  font-family: "Unbounded-Medium";
+  src: local("Unbounded-Medium"),
+    url(assets/fonts/Unbounded-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Unbounded-Regular";
+  src: local("Unbounded-Regular"),
+    url(assets/fonts/Unbounded-Regular.ttf) format("truetype");
+    
+}
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url(assets/fonts/WorkSans-Regular.ttf)
+  format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
